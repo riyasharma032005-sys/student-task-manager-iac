@@ -1,0 +1,7 @@
+
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "student-task-manager-mcp-remote",
+  "main": "remote.js",
+  "compatibility_date": "2026-10-16"
+}

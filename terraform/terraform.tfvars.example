@@ -1,0 +1,2 @@
+cloudflare_account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"
+worker_name          = "student-task-manager"

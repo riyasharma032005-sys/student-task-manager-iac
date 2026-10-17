@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">STUDENT PRODUCTIVITY</p>
+      <h1>My Tasks</h1>
+      <p class="subtitle">Plan your work. Make progress every day.</p>
+    </header>
+
+    <section class="task-form">
+      <h2>Add a new task</h2>
+      <form id="task-form">
+        <label for="task-title">Task title</label>
+        <input id="task-title" type="text" placeholder="e.g. Complete assignment" required>
+
+        <label for="task-description">Description (optional)</label>
+        <textarea id="task-description" placeholder="Add a few details"></textarea>
+
+        <button type="submit">+ Add Task</button>
+      </form>
+    </section>
+
+    <section class="tasks-section">
+      <div class="section-heading">
+        <h2>Your task list</h2>
+        <span id="task-count">0 tasks</span>
+      </div>
+      <p id="message" role="status"></p>
+      <div id="task-list">
+        <p class="empty-state">Loading your tasks...</p>
+      </div>
+    </section>
+
+    <footer>Student Task Manager · Powered by Cloudflare Workers</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
