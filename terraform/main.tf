@@ -9,7 +9,7 @@ resource "cloudflare_workers_script" "app" {
   name               = var.worker_name
   content            = file("${path.module}/../application/worker.js")
   compatibility_date = "2025-01-01"
-  module = true
+  module             = true
 
   kv_namespace_binding {
     name         = "TASKS_KV"
